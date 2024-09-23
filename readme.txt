@@ -1,0 +1,2 @@
+Link trello
+https://trello.com/invite/b/66b3775d696f12db7e8a100e/ATTI18e8f29a8977e278fa2e27e5554afc66D1FA89E2/valdora-saboaria
