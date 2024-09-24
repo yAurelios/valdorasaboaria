@@ -1,0 +1,17 @@
+/* Esse é o CSS geral do site, vai atribuir tamanho, cor e fundo */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: auto;
+}
+main{
+    margin-top: 10vh;
+}
+
+@media only screen and (max-width: 640px) {
+    main{
+        margin-top: 15vh;
+    }
+}
