@@ -1,4 +1,40 @@
 .initSite{
+    width: 100%;
     height: 85vh;
     border: solid red 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.initSite .readOfStore{
+    /* border: solid red 1px; */
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.readOfStore article{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 70%;
+    border: solid red 1px;
+}
+.readOfStore article h2{
+    width: 100%;
+    height: auto;
+    text-align: start;
+}
+.readOfStore article p{
+    
+    width: 100%;
+    text-align: justify;
+}
+
+.initSite aside{
+    width: 35%;
 }
