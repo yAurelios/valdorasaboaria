@@ -2,14 +2,14 @@
     const footerHTML = `
     <footer>
         <figure>
-            <img src="../../src/img/logo.svg" alt="Valdora Saboaria" id="footerMain">
+            <img src="../../src/img/logo.svg" alt="Valdora Saboaria" id="footerPf">
         </figure>
         <nav>
+            <p>Siga nossas redes sociais!</p>
             <ul>
-                <li class="socialMedias"></li>
-                <li class="socialMedias"></li>
-                <li class="socialMedias"></li>
-                <li class="socialMedias"></li>
+                <li class="socialMedias"><a><img src="../../src/img/logoIcons/whatsappLogo.svg" alt="Whatsapp" class="socialMedias"><p>Whatssap</p></a></li>
+                <li class="socialMedias"><a><img src="../../src/img/logoIcons/facebookLogo.svg" alt="Facebook" class="socialMedias"><p>Facebook</p></a></li>
+                <li class="socialMedias"><a><img src="../../src/img/logoIcons/instagramLogo.svg" alt="Instagram" class="socialMedias"><p>Instagram</p></a></li>
             </ul>
         </nav>
         <article>
@@ -19,13 +19,17 @@
         </article>
 
         <section>
-            <div>
-                <h3>Avalie a nossa loja!</h3>
-                <button>Avalie aqui!</button>
-            </div>
+                <h3><a>Avalie a nossa loja e nos ajude a crescer!</a></h3>
         </section>
 
-
+        <div>
+            <h3>
+            Feito como atividade avaliativa por estudantes do IFPR - Biopark
+            </h3>
+            <p>
+                Todos os direitos reservados
+            </p>
+        </div>
     </footer>
     `;
     document.getElementById('footer').innerHTML = footerHTML;

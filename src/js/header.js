@@ -8,7 +8,7 @@ function loadHeader() {
             <ul>
                 <li><a href="../../src/html/inicio.html">Início</a></li>
                 <li><a href="../../src/html/produtos.html">Loja</a></li>
-                <li><a href="">Minha história</a></li>
+                <li><a href="../../src/html/historia.html">Sobre mim</a></li>
                 <li><a href="">Contatos</a></li>
             </ul>
         </nav>

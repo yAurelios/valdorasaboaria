@@ -1,4 +1,6 @@
 
+
+
 header {
     text-align: center;
     width: 100%;
@@ -22,11 +24,11 @@ header {
 }
 .logo{
     margin-left: 10%;
-    scale: 1;
-    transition: 0.5s;
+    scale: 0.7;
+    /* transition: 0.5s; */
 }
 .logo:hover {
-    scale: 1.02;
+    scale: 0.8;
     transition: 1s;
 }
 .navBox{
@@ -47,6 +49,7 @@ header {
     list-style-type: none;
 }
 .navBox ul li{
+    transition: 1s;
     width: 20%;
 }
 .navBox ul li a{

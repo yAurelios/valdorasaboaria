@@ -1,0 +1,112 @@
+.promoProducts{
+    width: 100%;
+    height: auto;
+    /* border: solid red 1px; */
+}
+.aboutProducts{
+    /* border: solid red 1px; */
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.aboutProduct h2{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.aboutProduct p{
+    height: auto;
+    width: 100%;
+}
+
+.fatherProductsInPromo{
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    /* border: solid red 1px; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.productsList{
+    border-radius: 2%;
+    /* border: solid red 1px; */
+    background-color: #0c790c;
+    color: white;
+    width: 20%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.productsList figure{
+    margin-top: 3vh;
+    width: 80%;
+    height: 60%;
+}
+.productsList figure img{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 2%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-position: center;
+    /* background-size: cover; */
+    /* border: solid red 1px; */
+}
+
+.productsList p{
+    text-align: center;
+}
+
+.productsList button{
+    border-radius: 14px;
+    width: 6vw;
+    box-shadow: 0;
+    margin-bottom: 2vh;
+    border: 2px solid white;
+    color: #0c790c ;
+}
+
+.productsList button:hover{
+    transition: 0.5s;
+    background-color: #0c790c;
+    border: solid white 2px;
+    color: white;
+}
+
+/* <section class="promoProducts">
+            <article class="aboutProducts">
+                <h2>Promoção de Aniversário</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum numquam doloremque ad amet, itaque
+                    pariatur laudantium labore qui veritatis laboriosam!</p>
+            </article>
+
+            <div class="fatherProductsInPromo">
+                <div class="productsList">
+
+                    <img src="" alt="Imagem produto 1">
+                    <h3>Produto1</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, totam!</p>
+                    <button>Buy</button>
+                </div>
+                <div class="productsList">
+                    <img src="" alt="Imagem produto 2">
+                    <h3>Produto2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, porro?</p>
+                    <button>Buy</button>
+                </div>
+                <div class="productsList">
+                    <img src="" alt="Imagem produto 3">
+                    <h3>Produto3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, explicabo.</p>
+                    <button>Buy</button>
+                </div>
+            </div>
+        </section> */

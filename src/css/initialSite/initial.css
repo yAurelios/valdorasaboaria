@@ -1,7 +1,7 @@
 .initSite{
     width: 100%;
     height: 85vh;
-    border: solid red 1px;
+    margin-left: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +22,7 @@
     align-items: center;
     flex-wrap: wrap;
     height: 70%;
-    border: solid red 1px;
+    /* border: solid red 1px; */
 }
 .readOfStore article h2{
     width: 100%;

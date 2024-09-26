@@ -1,0 +1,130 @@
+footer{
+    margin-top: 5vh;
+    width: 100%;
+    height: auto;
+    background-color:#005A00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+footer figure{
+    scale: 0.8;
+    width: 100%;
+    height: auto;
+    border-bottom: solid white 1px;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+}
+footer figure img{
+    margin: 2vh;
+}
+footer ul{
+    list-style-type: none;
+    width: 100%;
+    height: 50%;
+    margin-top: -1vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+footer nav{
+    margin-top: 10vh;
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* border: solid red 1px; */
+}
+
+footer nav p{
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+footer nav img{
+    scale: 0.5;
+    text-align: center;
+    /* border: solid red 1px; */
+}   
+
+footer nav img a{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer nav ul li{
+    width: 30%;
+    height: auto;
+    /* border: solid red 1px; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+footer nav ul li p{
+    margin-top: -3vh;
+    width: 100%;
+    /* border: solid red 1px; */
+}
+
+footer article{
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    color: white;
+}
+
+footer article h2{
+    width: 100%;
+}
+
+footer article p{
+    width: 100%;
+}
+
+footer section{
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+footer section h3{
+    color: white;
+    width: 100%;
+}
+
+
+footer div{
+    width: 60%;
+    border-top: solid white 1px;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+footer div h3{
+    margin-top: 3vh;
+    width: 100%;
+}
