@@ -2,9 +2,13 @@
 *{
     margin: 0;
     padding: 0;
+    scrollbar-color: #f1f1f1 #005A00;
+    scrollbar-width: thin;
 }
 body{
     width: auto;
+    height: auto;
+    overflow-x: hidden;
 }
 main{
     margin-top: 10vh;
