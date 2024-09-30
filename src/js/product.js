@@ -58,14 +58,14 @@ function loadProducts(container, title, description, products) {
     // TIRAR O COMENTÁRIO SE JULGAR MELHOR O SCROLL OU NÃO
 
     // Adiciona evento de rolagem
-    // productContainer.addEventListener('wheel', (event) => {
-    //     event.preventDefault(); // Previne o scroll padrão da página
-    //     if (event.deltaY > 0) {
-    //         moveSlide(1, innerProductContainer, products.length, leftArrow, rightArrow); // Para baixo
-    //     } else {
-    //         moveSlide(-1, innerProductContainer, products.length, leftArrow, rightArrow); // Para cima
-    //     }
-    // });
+    productContainer.addEventListener('wheel', (event) => {
+        event.preventDefault(); // Previne o scroll padrão da página
+        if (event.deltaY > 0) {
+            moveSlide(1, innerProductContainer, products.length, leftArrow, rightArrow); // Para baixo
+        } else {
+            moveSlide(-1, innerProductContainer, products.length, leftArrow, rightArrow); // Para cima
+        }
+    });
 
     // adiciona evento para setas
     rightArrow.addEventListener('click', () => {
@@ -112,16 +112,20 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Produto5", description: "Descrição do Produto 5", price: "R$ 25,00", img: "../../src/img/imagensSabonetes/img5.jpg" },
         { name: "Produto6", description: "Descrição do Produto 6 ", price: "R$ 30,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
         { name: "Produto7", description: "Descrição do Produto 7", price: "R$ 30,00", img: "../../src/img/imagensSabonetes/img1.jpg" },
-        { name: "Produto8", description: "Descrição do Produto 8", price: "R$ 30,00", img: "../../src/img/imagensSabonetes/img4.jpg"}
+        { name: "Produto8", description: "Descrição do Produto 8", price: "R$ 30,00", img: "../../src/img/imagensSabonetes/img4.jpg"},
+        { name: "Produto9", description: "Descrição do Produto 8", price: "R$ 30,00", img: "../../src/img/imagensSabonetes/img4.jpg"}
     ]);
     loadProducts(productsContainer, "Promoção de Natal", "Descrição da promoção de aniversário!", [
         { name: "Produto1", description: "Descrição do Produto 1", price: "R$ 10,00", img: "../../src/img/imagensSabonetes/img2.jpg" },
         { name: "Produto2", description: "Descrição do Produto 2", price: "R$ 15,00", img: "../../src/img/imagensSabonetes/img5.jpg" },
         { name: "Produto3", description: "Descrição do Produto 3", price: "R$ 20,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
     ]);
-    loadProducts(productsContainer, "Promoção de Perus de Natal", "Descrição da promoção de peruzinhos no seu cuzinhos!", [
+    loadProducts(productsContainer, "Promoção de Páscoa", "Descrição da promoção de aniversário!", [
         { name: "Produto1", description: "Descrição do Produto 1", price: "R$ 10,00", img: "../../src/img/imagensSabonetes/img2.jpg" },
         { name: "Produto2", description: "Descrição do Produto 2", price: "R$ 15,00", img: "../../src/img/imagensSabonetes/img5.jpg" },
         { name: "Produto3", description: "Descrição do Produto 3", price: "R$ 20,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
+        { name: "Produto4", description: "Descrição do Produto 1", price: "R$ 10,00", img: "../../src/img/imagensSabonetes/img2.jpg" },
+        { name: "Produto5", description: "Descrição do Produto 2", price: "R$ 15,00", img: "../../src/img/imagensSabonetes/img5.jpg" },
+        { name: "Produto6", description: "Descrição do Produto 3", price: "R$ 20,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
     ]);
 });
