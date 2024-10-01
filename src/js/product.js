@@ -23,7 +23,7 @@ function loadProducts(container, title, description, products) {
             <h3>${product.name}</h3>
             <p>${product.description}</p>
             <p>Preço: ${product.price}</p>
-            <button>Buy</button>
+            <button class="buyProducts">Buy</button>
         `;
         innerProductContainer.appendChild(productDiv);
     });
@@ -112,19 +112,22 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Produto6", description: "Descrição do Produto 6 ", price: "R$ 30,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
         { name: "Produto7", description: "Descrição do Produto 7", price: "R$ 30,00", img: "../../src/img/imagensSabonetes/img1.jpg" },
         { name: "Produto8", description: "Descrição do Produto 8", price: "R$ 30,00", img: "../../src/img/imagensSabonetes/img4.jpg"},
-        { name: "Produto9", description: "Descrição do Produto 8", price: "R$ 30,00", img: "../../src/img/imagensSabonetes/img4.jpg"}
+    ]);
+    loadProducts(productsContainer, "Promoção de Natal", "Descrição da promoção de aniversário!", [
+        { name: "Produto1", description: "Descrição do Produto 1", price: "R$ 10,00", img: "../../src/img/imagensSabonetes/img2.jpg" },
+        { name: "Produto2", description: "Descrição do Produto 2", price: "R$ 15,00", img: "../../src/img/imagensSabonetes/img5.jpg" },
+        { name: "Produto3", description: "Descrição do Produto 3", price: "R$ 20,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
+        { name: "Produto1", description: "Descrição do Produto 1", price: "R$ 10,00", img: "../../src/img/imagensSabonetes/img2.jpg" },
+        { name: "Produto2", description: "Descrição do Produto 2", price: "R$ 15,00", img: "../../src/img/imagensSabonetes/img5.jpg" },
+        { name: "Produto3", description: "Descrição do Produto 3", price: "R$ 20,00", img: "../../src/img/imagensSabonetes/img6.jpg" }
     ]);
     loadProducts(productsContainer, "Promoção de Natal", "Descrição da promoção de aniversário!", [
         { name: "Produto1", description: "Descrição do Produto 1", price: "R$ 10,00", img: "../../src/img/imagensSabonetes/img2.jpg" },
         { name: "Produto2", description: "Descrição do Produto 2", price: "R$ 15,00", img: "../../src/img/imagensSabonetes/img5.jpg" },
         { name: "Produto3", description: "Descrição do Produto 3", price: "R$ 20,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
     ]);
-    loadProducts(productsContainer, "Promoção de Páscoa", "Descrição da promoção de aniversário!", [
-        { name: "Produto1", description: "Descrição do Produto 1", price: "R$ 10,00", img: "../../src/img/imagensSabonetes/img2.jpg" },
-        { name: "Produto2", description: "Descrição do Produto 2", price: "R$ 15,00", img: "../../src/img/imagensSabonetes/img5.jpg" },
-        { name: "Produto3", description: "Descrição do Produto 3", price: "R$ 20,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
-        { name: "Produto4", description: "Descrição do Produto 1", price: "R$ 10,00", img: "../../src/img/imagensSabonetes/img2.jpg" },
-        { name: "Produto5", description: "Descrição do Produto 2", price: "R$ 15,00", img: "../../src/img/imagensSabonetes/img5.jpg" },
-        { name: "Produto6", description: "Descrição do Produto 3", price: "R$ 20,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
-    ]);
 });
+
+
+// desabafo sincero, não sei oq fiz aqui, muito GPT pra corrigir, muito vídeo no youtube pra entender, muito energético pra ficar acordado, muito paracetamol pra aliviar a dor de cabeça por estar tanto tempo acordado, mas... FUNCIONA!
+// COMO CARALHOS VOU FAZER PRA ISSO ESTAR LINKADO COM A CRIAÇÃO DE PRODUTOS NO SITE?! NÃO SEI, ÓTIMA PERGUNTA! PORÉM OS CARDS FUNCIONAM!

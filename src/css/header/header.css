@@ -1,3 +1,4 @@
+/* Estilização do cabeçalho */
 header {
     z-index: 2;
     text-align: center;
@@ -11,71 +12,144 @@ header {
     position: fixed;
     top: 0;
     border-bottom: solid white 1px;
-    /* border: solid red 1px; */
 }
-.logoBox{
-    width: 50%;
-    /* border: solid red 1px; */
+
+/* Estilização da logo */
+.logoBox {
+    width: 40%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: start;
 }
-.logo{
+
+.logo {
     margin-left: 10%;
     scale: 0.7;
-    /* transition: 0.5s; */
 }
+
 .logo:hover {
     scale: 0.8;
     transition: 1s;
 }
-.navBox{
-    width: 50%;
+
+/* Estilização da navBox */
+.navBox {
+    width: 60%;
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    position: relative; /* Para posicionar o menu hamburguer */
 }
-.navBox ul{
+
+.navBox ul {
     width: 100%;
-    height: 80%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     list-style-type: none;
 }
-.navBox ul li{
+
+.navBox ul li {
     transition: 1s;
-    width: 20%;
+    width: 15%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
-.navBox ul li a{
+
+.navBox ul li a {
     text-decoration: none;
     color: white;
+    display: flex;
+    align-items: center;
+}
+
+.navBox ul li a img {
+    width: 20px;
+    height: auto;
+}
+
+/* Estilização do menu hamburguer */
+.hamburger {
+    display: none; /* Ocultar por padrão */
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white; /* Cor do ícone do hambúrguer */
+    cursor: pointer;
+    margin-right: 10px; /* Margem à direita */
+}
+
+/* Menu em dispositivos móveis */
+.navBox.active {
+    display: flex; /* Mostrar menu quando ativo */
 }
 
 @media only screen and (max-width: 640px) {
-    header{
-        height: 13vh;
+    header {
+        height: 12vh; /* Aumentar a altura do cabeçalho em dispositivos móveis */
         display: flex;
+        align-items: center;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
-    .logoBox{
+
+    .logoBox {
         margin-top: 1vh;
-        width: 100%;
-        height: 50%;
-        display: flex;
-        justify-content: center; 
+        width: 80%;
+        height: 70%;
+        margin: 0 auto;
+        margin-left: 10%;
     }
-    .navBox{
+
+    .navBox {
+        display: none; /* Esconder navBox por padrão */
+        flex-direction: column; /* Colocar itens em coluna */
         width: 100%;
-        height: 40%;
-        margin-bottom: 2vh;
+        height: auto; /* Altura automática */
+        background-color: #005A00; /* Cor de fundo do menu */
+        position: absolute; /* Para se sobrepor ao cabeçalho */
+        top: 100%; /* Abaixo do cabeçalho */
+        left: 0;
+        right: 0;
+        z-index: 1; /* Abaixo do cabeçalho */
+        transition: left 0.3s ease; /* Efeito de transição */
     }
-    .logo{
+
+    .navBox.active {
+        display: flex; /* Mostrar menu quando ativo */
+    }
+
+    .navBox ul {
+        flex-direction: column; /* Colocar itens em coluna no menu móvel */
+        width: 100%; /* Largura total */
+        padding: 10px; /* Espaçamento interno */
+        /* border: solid red 1px; */
+    }
+
+    .navBox ul li {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        width: 100%;
+        height: auto; /* Itens ocupam a largura total */
+        text-align: left; /* Alinhar texto à esquerda */
+        /* border: solid red 1px; */
+    }
+    .navBox ul li a{
+        font-size: 20px;
+    }
+    button.hamburger {
+        margin-left: 10%;
+        margin: 0 auto;
+        display: block; /* Mostrar botão de menu em telas menores */
+        font-size: 25px; /* Aumentar o tamanho do ícone */
+    }
+    .logo {
         margin-left: 0;
-        scale: 0.8;
+        scale: 0.9; /* Ajustar escala da logo */
     }
 }

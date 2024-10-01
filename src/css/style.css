@@ -1,21 +1,21 @@
-/* Esse é o CSS geral do site, vai atribuir tamanho, cor e fundo */
-*{
+* {
     margin: 0;
     padding: 0;
     scrollbar-color: #f1f1f1 #005A00;
     scrollbar-width: thin;
 }
-body{
+body {
     width: auto;
     height: auto;
     overflow-x: hidden;
 }
-main{
+
+main {
     margin-top: 10vh;
 }
 
 @media only screen and (max-width: 640px) {
-    main{
-        margin-top: 15vh;
+    main {
+        margin-top: 5vh;
     }
 }

@@ -101,8 +101,8 @@ button {
     border-radius: 5px;
 }
 
-button:hover {
-    background-color: #ddd;
+.buyProducts:hover {
+    background-color: #949494;
 }
 
 .centered {
