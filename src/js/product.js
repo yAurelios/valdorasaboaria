@@ -57,15 +57,14 @@ function loadProducts(container, title, description, products) {
 
     // TIRAR O COMENTÁRIO SE JULGAR MELHOR O SCROLL OU NÃO
 
-    // Adiciona evento de rolagem
-    productContainer.addEventListener('wheel', (event) => {
-        event.preventDefault(); // Previne o scroll padrão da página
-        if (event.deltaY > 0) {
-            moveSlide(1, innerProductContainer, products.length, leftArrow, rightArrow); // Para baixo
-        } else {
-            moveSlide(-1, innerProductContainer, products.length, leftArrow, rightArrow); // Para cima
-        }
-    });
+    // productContainer.addEventListener('wheel', (event) => {
+    //     event.preventDefault(); // Previne o scroll padrão da página
+    //     if (event.deltaY > 0) {
+    //         moveSlide(1, innerProductContainer, products.length, leftArrow, rightArrow); // Para baixo
+    //     } else {
+    //         moveSlide(-1, innerProductContainer, products.length, leftArrow, rightArrow); // Para cima
+    //     }
+    // });
 
     // adiciona evento para setas
     rightArrow.addEventListener('click', () => {

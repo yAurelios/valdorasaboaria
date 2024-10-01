@@ -15,6 +15,8 @@ function loadCss() {
     <!-- Style dos cards de produtos -->
     <link rel="stylesheet" href="../../src/css/products/products.css">
 
+    <!-- Style do Favicon -->
+    <link rel="shortcut icon" type="image/png" href="./images/icon.ico"><link rel="shortcut icon" type="imagex/png" href="../../src/img/logo.svg">
     `;
 
     
