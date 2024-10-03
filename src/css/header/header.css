@@ -11,7 +11,7 @@ header {
     background-color: #005A00;
     position: fixed;
     top: 0;
-    border-bottom: solid white 1px;
+    /* border-bottom: solid white 1px; */
 }
 
 /* Estilização da logo */

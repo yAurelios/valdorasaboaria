@@ -1,5 +1,5 @@
 function loadHeader() {
-    const isLoggedIn = false; // Substituir pela real de verificação de login
+    const isLoggedIn = true; // Substituir pela real de verificação de login
 
     const headerHTML = `
     <header> 

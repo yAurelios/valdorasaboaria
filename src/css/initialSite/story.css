@@ -1,3 +1,10 @@
+@font-face {
+    font-family: Caudex;
+
+    src: url("../../../src/fonts/Caudex/Caudex-Regular.ttf") format('truetype');
+}
+
+
 .readStory{
     width: 100%;
     display: flex;
@@ -6,7 +13,9 @@
     justify-content: center;
     margin-top: 5vh;
     /* border: solid red 1px; */
-
+    margin-bottom: 15vh;
+    font-family: Caudex;
+    color: white;
 }
 .readStory article{
     width: 80%;

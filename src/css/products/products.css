@@ -1,12 +1,24 @@
+@font-face {
+    font-family: Merriweather;
+    
+    src: url('../../../src/fonts/Merriweather/Merriweather-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: Caudex;
+
+    src: url("../../../src/fonts/Caudex/Caudex-Regular.ttf") format('truetype');
+}
 .products {
     /* border: solid red 1px; */
-    background-color: white;
+    /* background-color: white; */
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
     padding: 20px;
     width: 80%;
     text-align: center; /* Centraliza o conteúdo */
     margin: 0 auto; /* Centraliza o container */
+    font-family: Caudex;
+    color: whites;
 }
 
 .slider {
@@ -21,32 +33,31 @@
     transition: transform 0.5s ease;
     width: 100%; /* Para evitar quebra */
 }
-.products h2{
+.products h2, .products p{
     margin-top: 5vh;
+    color: white;
 }
 .productsList {
     background-color: #005A00;
     color: white;
     min-width: 23%; /* 4 produtos por vez */ 
     max-width: 23%;
+    height: auto;
     margin: 1%;
     box-sizing: border-box;
     padding: 10px;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
+    display: flex;  
+    justify-content: center;    
     flex-wrap: wrap;
     border-radius: 10px;
     /* border: solid red 1px; */
 }
 
-.productsList h2{
+.productsList h3, .productsList p{
     width: 100%;
     text-align: center;
-}
-.productsList p{
-    width: 100%;
-    text-align: center;
+    margin-top: 1vh;
 }
 .productsList button{
     width: 60%;

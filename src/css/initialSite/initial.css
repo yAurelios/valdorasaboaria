@@ -1,11 +1,21 @@
+@font-face {
+    font-family: Caudex;
+
+    src: url("../../../src/fonts/Caudex/Caudex-Regular.ttf") format('truetype');
+}
+
+
 .initSite{
+    margin-top: 6vh;
     width: 100%;
     height: 75vh;
-    margin-left: 10vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     flex-wrap: wrap;
+    position: relative;
+    color: white;
+    font-family: Caudex;
 }
 .initSite .readOfStore{
     /* border: solid red 1px; */
@@ -17,11 +27,15 @@
     flex-wrap: wrap;
 }
 .readOfStore article{
+    background-color: rgba(18, 18, 18, 0.201);
+    margin-left: 5vw;
+    padding: 3%;
     display: flex;
     justify-self: center;
     align-items: center;
     flex-wrap: wrap;
     height: 70%;
+    border-radius: 3%;
     /* border: solid red 1px; */
 }
 .readOfStore article h2{

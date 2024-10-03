@@ -1,5 +1,4 @@
 footer{
-    margin-top: 15vh;
     width: 100%;
     height: auto;
     background-color:#005A00;
@@ -8,7 +7,7 @@ footer{
     justify-content: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
+    position: relative;
 }
 
 footer figure{
