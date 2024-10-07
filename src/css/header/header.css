@@ -1,5 +1,13 @@
-/* Estilização do cabeçalho */
+
+@font-face {
+    font-family: Caudex;
+
+    src: url("../../../src/fonts/Caudex/Caudex-Regular.ttf") format('truetype');
+}
+
+
 header {
+    font-family: Caudex;
     z-index: 2;
     text-align: center;
     width: 100%;

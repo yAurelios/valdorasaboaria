@@ -1,4 +1,11 @@
+@font-face {
+    font-family: Caudex;
+
+    src: url("../../../src/fonts/Caudex/Caudex-Regular.ttf") format('truetype');
+}
+
 footer{
+    font-family: Caudex;
     width: 100%;
     height: auto;
     background-color:#005A00;
