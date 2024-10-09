@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    scrollbar-color: #f1f1f1 #005A00;
+    scrollbar-color: #f1f1f1 #005a00;
     scrollbar-width: thin;
 }
 body {
@@ -14,7 +14,11 @@ main {
     margin-top: 11vh;
     height: auto;
     position: relative;
-    background-color: #587258;
+    background: linear-gradient(135deg, rgba(0, 49, 0, 0.344), rgba(37, 135, 22, 0.155));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }

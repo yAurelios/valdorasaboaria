@@ -15,7 +15,7 @@ function loadHeader() {
                 <li><a href="../../src/html/historia.html">História</a></li>
                 <li><a href="../../src/html/contatos.html">Contatos</a></li>
                 ${!isLoggedIn ? '<li><a href="../../src/html/login.html">Login</a></li>' : ''}
-                <li><a href="../../src/html/contatos.html"><img src="../../src/img/logoIcons/shoppingCart.svg" alt="Carrinho"></a></li>
+                <li><a href="#"><img src="../../src/img/logoIcons/shoppingCart.svg" alt="Carrinho"></a></li>
             </ul>
         </nav>
     </header>

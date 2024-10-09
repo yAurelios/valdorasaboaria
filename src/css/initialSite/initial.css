@@ -27,7 +27,11 @@
     flex-wrap: wrap;
 }
 .readOfStore article{
-    background-color: rgba(18, 18, 18, 0.201);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     margin-left: 5vw;
     padding: 3%;
     display: flex;
@@ -35,7 +39,7 @@
     align-items: center;
     flex-wrap: wrap;
     height: 70%;
-    border-radius: 3%;
+    border-radius: 2%;
     /* border: solid red 1px; */
 }
 .readOfStore article h2{

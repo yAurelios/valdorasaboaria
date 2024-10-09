@@ -18,12 +18,13 @@ function loadProducts(container, title, description, products) {
         productDiv.className = 'productsList';
         productDiv.innerHTML = `
             <figure>
-                <img src="${product.img}" alt="${product.name}" style="width: 100%;">
+                <img src="${product.img}" alt="${product.name}">
             </figure>
             <h3>${product.name}</h3>
             <p>${product.description}</p>
             <p>Preço: R$ ${product.price}</p>
-            <button class="buyProducts">Buy</button>
+            <button class="viewProducts">View</button>
+
         `;
         innerProductContainer.appendChild(productDiv);
     });

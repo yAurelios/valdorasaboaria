@@ -25,7 +25,6 @@
     position: relative;
     overflow: hidden;
 }
-
 .productContainer {
     margin-top: 5vh;
     /* border: solid red 1px; */
@@ -110,12 +109,12 @@ button {
     padding: 10px;
     margin-top: 10px;
     border-radius: 5px;
+    width: 50%;
 }
 
-.buyProducts:hover {
+.viewProducts:hover {
     background-color: #949494;
 }
-
 .centered {
     justify-content: center; /* centraliza os cards apenas quando necessário  (menos de 4*/
 }
