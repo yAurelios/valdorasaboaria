@@ -1,5 +1,7 @@
 let currentIndex = 0;
 
+
+// cria os produtos
 function loadProducts(container, title, description, products) {
     const titleElement = document.createElement('h2');
     titleElement.textContent = title;
@@ -20,7 +22,7 @@ function loadProducts(container, title, description, products) {
             <figure>
                 <img src="${product.img}" alt="${product.name}">
             </figure>
-            <h3>${product.name}</h3>
+            <h2>${product.name}</h2>
             <p>${product.description}</p>
             <p>Preço: R$ ${product.price}</p>
             <button class="viewProducts">View</button>
@@ -104,7 +106,7 @@ function updateArrowVisibility(leftArrow, rightArrow, totalProducts) {
 // chama a função com diferentes títulos, descrições e listas de produtos
 document.addEventListener("DOMContentLoaded", () => {
     const productsContainer = document.querySelector('.products');
-    loadProducts(productsContainer, "Promoção de Natal", "Descrição da promoção de aniversário!", [
+    loadProducts(productsContainer, "Promoção de Natal", "Descrição da promoção de natal!", [
         { name: "Produto1", description: "Descrição do Produto 1", price: "10,00", img: "../../src/img/imagensSabonetes/img2.jpg" },
         { name: "Produto2", description: "Descrição do Produto 2", price: "15,00", img: "../../src/img/imagensSabonetes/img5.jpg" },
         { name: "Produto3", description: "Descrição do Produto 3", price: "20,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
@@ -112,18 +114,18 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Produto2", description: "Descrição do Produto 2", price: "15,00", img: "../../src/img/imagensSabonetes/img5.jpg" },
         { name: "Produto3", description: "Descrição do Produto 3", price: "20,00", img: "../../src/img/imagensSabonetes/img6.jpg" }
     ]);
-    loadProducts(productsContainer, "Promoção de Natal", "Descrição da promoção de aniversário!", [
-        { name: "Produto1", description: "Descrição do Produto 1", price: "10,00", img: "../../src/img/imagensSabonetes/img2.jpg" },
-        { name: "Produto2", description: "Descrição do Produto 2", price: "15,00", img: "../../src/img/imagensSabonetes/img5.jpg" },
-        { name: "Produto3", description: "Descrição do Produto 3", price: "30,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
-    ]);
-    loadProducts(productsContainer, "Promoção de Natal", "Descrição da promoção de aniversário!", [
+    loadProducts(productsContainer, "Promoção de Dia das Crianças", "Descrição da promoção de Dia das Crianças!", [
         { name: "Produto1", description: "Descrição do Produto 1", price: "10,00", img: "../../src/img/imagensSabonetes/img2.jpg" },
         { name: "Produto2", description: "Descrição do Produto 2", price: "15,00", img: "../../src/img/imagensSabonetes/img5.jpg" },
         { name: "Produto3", description: "Descrição do Produto 3", price: "20,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
+        { name: "Produto4", description: "Descrição do Produto 1", price: "10,00", img: "../../src/img/imagensSabonetes/img2.jpg" },
+        { name: "Produto5", description: "Descrição do Produto 2", price: "15,00", img: "../../src/img/imagensSabonetes/img5.jpg" },
+        { name: "Produto6", description: "Descrição do Produto 3", price: "20,00", img: "../../src/img/imagensSabonetes/img6.jpg" }
+    ]);
+    loadProducts(productsContainer, "Promoção de Dia das Crianças", "Descrição da promoção de Dia das Crianças!", [
         { name: "Produto1", description: "Descrição do Produto 1", price: "10,00", img: "../../src/img/imagensSabonetes/img2.jpg" },
         { name: "Produto2", description: "Descrição do Produto 2", price: "15,00", img: "../../src/img/imagensSabonetes/img5.jpg" },
-        { name: "Produto3", description: "", price: "20,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
+        { name: "Produto3", description: "Descrição do Produto 3", price: "20,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
     ]);
 });
 

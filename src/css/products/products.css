@@ -17,6 +17,7 @@
     width: 80%;
     text-align: center; /* Centraliza o conteúdo */
     margin: 0 auto; /* Centraliza o container */
+    margin-top: 3vh;
     font-family: Caudex;
     color: whites;
 }

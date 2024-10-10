@@ -1,0 +1,111 @@
+.popup {
+    display: none; /* Padrão escondido */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000; /* em cima dos outros elementos */
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: white;
+    width: 40%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+}
+.popup-content h2{
+    margin-top: 5vh;
+    width: 90%;
+    height: auto;
+    text-align: center;
+    /* border: solid red 1px; */
+}
+#loginForm{
+    /* border: solid red 1px; */
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: 5vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 4vh;
+}
+
+#loginForm{
+    label{
+        width: 100%;
+        text-align: center;
+    }
+    input{
+        width: 80%;
+    }
+}
+.close {
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+    width: 5%;
+    /* border: solid red 1px; */
+    text-align: center;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+
+.popup-content a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    /* background-color: #007bff; */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-top: 5vh;
+    width: 50%;
+    text-align: center;
+}
+
+.popup-content a:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+
+
+/* <div id="popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <span id="closePopup" class="close">&times;</span>
+            <h2>Tela de Login</h2>
+            <form id="loginForm">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+    <div id="logoutPopup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <h2>Você tem certeza que deseja deslogar?</h2>
+            <button id="confirmLogout">Sim</button>
+            <button id="cancelLogout">Não</button>
+        </div>
+    </div> */

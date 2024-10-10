@@ -17,7 +17,13 @@ function loadCss() {
 
     <!-- Style da Story -->
     <link rel="stylesheet" href="../../src/css/initialSite/story.css">;
+
+    <!-- Style do Pop UP login -->
+    <link rel="stylesheet" href="../../src/css/login/login.css">;
     `;
+
+    
+
 
 
     
