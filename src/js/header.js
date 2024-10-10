@@ -20,8 +20,8 @@ function loadHeader() {
                 <li><a href="../../src/html/loja.html">Loja</a></li>
                 <li><a href="../../src/html/historia.html">Sobre mim</a></li>
                 <li><a href="../../src/html/contatos.html">Contatos</a></li>
-                ${!isLoggedIn ? '<li><a href="#" id="openPopup">Login</a></li>' : '<li><a href="#" id="logout">Logout</a></li>'}
                 <li><a href="#"><img src="../../src/img/logoIcons/shoppingCart.svg" alt="Carrinho"></a></li>
+                ${!isLoggedIn ? '<li><a href="#" id="openPopup">Login</a></li>' : '<li><a href="#" id="logout">Sair</a></li>'}
             </ul>
         </nav>
     </header>
