@@ -34,7 +34,7 @@
     width: 100%; /* Para evitar quebra */
 }
 .products h2, .products p{
-    margin-top: 5vh;
+    margin-top: 3vh;
     color: white;
 }
 .productsList {
@@ -118,4 +118,117 @@ button {
 }
 .centered {
     justify-content: center; /* centraliza os cards apenas quando necessário  (menos de 4*/
+}
+
+
+/* <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img src="" alt="Product Image" class="modal-image">
+            <h2 class="modal-title"></h2>
+            <p class="modal-description"></p>
+            <p class="modal-price"></p>
+            <button class="buy-now">Comprar</button>
+        </div> */
+        
+/* Estilo para o modal */
+.modal {
+    display: none; /* Oculto por padrão */
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+}
+
+.modal-content {
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(211, 180, 180, 0.233), rgba(207, 197, 197, 0.089));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: white;
+    width: 50%;
+    height: 60%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal img{
+    max-width: 60%;
+    height: 100%;
+}
+.modal-content section{
+    margin-left: 2%;
+    height: 100%;
+    width: 38%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    /* padding: 10px; */
+    /* border: solid red 1px; */
+}
+.modal-content h2{
+    width: 100%;
+    text-align: center;
+    /* border: solid red 1px; */
+    margin-top: 5vh;
+}
+.modal-content .modal-description{
+    width: 100%;
+    text-align: justify;
+}
+.modal-content .modal-price{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 24px;
+}
+.modal-content button{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #005A00;
+    color: white;
+}
+.addToMyCart{
+    width: 100%;
+    height: 15%;
+    /* border: solid red 1px; */
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: #005A00;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.addToMyCart img{
+    width: 10%;
+    height: auto;
+}
+.addToMyCart p{
+    width: 75%;
+    /* border: solid red 1px; */
 }
