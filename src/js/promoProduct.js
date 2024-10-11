@@ -1,4 +1,4 @@
-let currentIndex = 0;
+let currentIndex = 0; 
 
 // Função para criar e abrir o modal com as informações do produto
 function createModal() {
@@ -7,17 +7,18 @@ function createModal() {
     modal.style.display = 'none'; // Inicia escondido
 
     modal.innerHTML = `
-        <div class="modal-content">
-            <span class="modal-close">&times;</span>
+        <div class="modal-content" tabindex="-1">
+            <span class="modal-close" role="button" aria-label="Fechar modal">&times;</span>
             <img src="" alt="Product Image" class="modal-image">
             <section>
                 <h2 class="modal-title"></h2>
                 <p class="modal-description"></p>
                 <p class="modal-price"></p>
-            <button class="buy-now">Comprar</button>
-            <button class="addToMyCart" href="#"><img src="../../src/img/logoIcons/shoppingCart.svg" alt="Carrinho">
-                <p>Adicionar ao Carrinho</p>
-            </button>
+                <button class="buy-now">Comprar</button>
+                <button class="addToMyCart">
+                    <img src="../../src/img/logoIcons/shoppingCart.svg" alt="Carrinho">
+                    <p>Adicionar ao Carrinho</p>
+                </button>
             </section>
         </div>
     `;
@@ -25,12 +26,12 @@ function createModal() {
 
     // Evento para fechar o modal ao clicar no botão de fechar
     const closeModalButton = modal.querySelector('.modal-close');
-    closeModalButton.addEventListener('click', closeModal);
+    closeModalButton.addEventListener('click', () => closeModal(modal));
 
     // Fechar o modal ao clicar fora do conteúdo
     window.addEventListener('click', (event) => {
         if (event.target === modal) {
-            closeModal();
+            closeModal(modal);
         }
     });
 
@@ -38,6 +39,7 @@ function createModal() {
     function closeModal() {
         modal.style.display = 'none';
         document.body.style.overflow = 'auto'; // Permite scroll na página novamente
+        toggleTabIndex(true); // Restaura a navegabilidade por tabulação nos elementos externos
     }
 
     return modal;
@@ -58,7 +60,20 @@ function openModal(product, modal) {
 
     modal.style.display = 'block'; // Exibe o modal
     document.body.style.overflow = 'hidden'; // Impede o scroll na página
+
+    // Bloquear tab nos elementos externos
+    toggleTabIndex(modal, false); // Desabilita tabindex fora do modal
+
+    // Coloca o foco no primeiro elemento interativo do modal
+    modal.querySelector('.modal-content').focus();
 }
+
+function closeModal(modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto'; // Permite scroll na página novamente
+    toggleTabIndex(modal, true); // Restaura tabindex fora do modal
+}
+
 
 // Função para carregar os produtos
 function loadProducts(container, title, description, products) {
@@ -153,6 +168,46 @@ function updateArrowVisibility(leftArrow, rightArrow, totalProducts) {
     rightArrow.style.display = currentIndex < totalProducts - visibleCount ? 'block' : 'none';
 }
 
+// Função para bloquear ou desbloquear o tabindex
+function toggleTabIndex(modal, enable) {
+    // Seleciona todos os elementos focáveis na página
+    const focusableElements = document.querySelectorAll('a, button, input, [tabindex]:not([tabindex="-1"])');
+
+    focusableElements.forEach(el => {
+        // Verifica se o elemento NÃO está dentro do modal
+        if (!modal.contains(el)) {
+            if (enable) {
+                el.removeAttribute('tabindex'); // Restaura o tabindex
+            } else {
+                el.setAttribute('tabindex', '-1'); // Torna os elementos não focáveis
+            }
+        }
+    });
+}
+
+// Função para gerenciar a navegação por TAB no modal
+function manageTabIndex(modal) {
+    const focusableElements = modal.querySelectorAll('.modal-content a, .modal-content button, .modal-content input');
+    const firstElement = focusableElements[0];
+    const lastElement = focusableElements[focusableElements.length - 1];
+
+    // Evento para interceptar a navegação com TAB
+    modal.addEventListener('keydown', (event) => {
+        if (event.key === 'Tab') {
+            if (event.shiftKey) { // Shift + Tab
+                if (document.activeElement === firstElement) {
+                    event.preventDefault();
+                    lastElement.focus(); // Volta para o último elemento
+                }
+            } else { // Apenas Tab
+                if (document.activeElement === lastElement) {
+                    event.preventDefault();
+                    firstElement.focus(); // Volta para o primeiro elemento
+                }
+            }
+        }
+    });
+}
 // Inicializa os produtos e chama a função ao carregar a página
 document.addEventListener("DOMContentLoaded", () => {
     const productsContainer = document.querySelector('.products');
@@ -165,9 +220,9 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Produto1", description: "Descrição do Produto 1", price: "10,00", img: "../../src/img/imagensSabonetes/img2.jpg" },
         { name: "Produto2", description: "Descrição do Produto 2", price: "15,00", img: "../../src/img/imagensSabonetes/img5.jpg" },
         { name: "Produto3", description: "Descrição do Produto 3", price: "20,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
-        { name: "Produto3", description: "Descrição do Produto 3", price: "20,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
-        { name: "Produto3", description: "Descrição do Produto 3", price: "20,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
-        { name: "Produto3", description: "Descrição do Produto 3", price: "20,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
-        { name: "Produto3", description: "Descrição do Produto 3", price: "20,00", img: "../../src/img/imagensSabonetes/img6.jpg" }
+        { name: "Produto4", description: "Descrição do Produto 4", price: "25,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
+        { name: "Produto5", description: "Descrição do Produto 5", price: "30,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
+        { name: "Produto6", description: "Descrição do Produto 6", price: "35,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
+        { name: "Produto7", description: "Descrição do Produto 7", price: "40,00", img: "../../src/img/imagensSabonetes/img6.jpg" }
     ]);
 });
