@@ -210,13 +210,22 @@ function manageTabIndex(modal) {
 }
 // Inicializa os produtos e chama a função ao carregar a página
 document.addEventListener("DOMContentLoaded", () => {
-    const productsContainer = document.querySelector('.products');
+    const productsContainer = document.querySelector('.promoProducts');
     loadProducts(productsContainer, "Promoção de Natal", "Descrição da promoção de natal!", [
         { name: "Produto1", description: "Descrição do Produto 1", price: "10,00", img: "../../src/img/imagensSabonetes/img2.jpg" },
         { name: "Produto2", description: "Descrição do Produto 2", price: "15,00", img: "../../src/img/imagensSabonetes/img5.jpg" },
         { name: "Produto3", description: "Descrição do Produto 3", price: "20,00", img: "../../src/img/imagensSabonetes/img6.jpg" }
     ]);
     loadProducts(productsContainer, "Promoção de Natal", "Descrição da promoção de natal!", [
+        { name: "Produto1", description: "Descrição do Produto 1", price: "10,00", img: "../../src/img/imagensSabonetes/img2.jpg" },
+        { name: "Produto2", description: "Descrição do Produto 2", price: "15,00", img: "../../src/img/imagensSabonetes/img5.jpg" },
+        { name: "Produto3", description: "Descrição do Produto 3", price: "20,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
+        { name: "Produto4", description: "Descrição do Produto 4", price: "25,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
+        { name: "Produto5", description: "Descrição do Produto 5", price: "30,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
+        { name: "Produto6", description: "Descrição do Produto 6", price: "35,00", img: "../../src/img/imagensSabonetes/img6.jpg" },
+        { name: "Produto7", description: "Descrição do Produto 7", price: "40,00", img: "../../src/img/imagensSabonetes/img6.jpg" }
+    ]);
+    loadProducts(productsContainer, "Promoção de Páscoa", "Descrição da promoção de natal!", [
         { name: "Produto1", description: "Descrição do Produto 1", price: "10,00", img: "../../src/img/imagensSabonetes/img2.jpg" },
         { name: "Produto2", description: "Descrição do Produto 2", price: "15,00", img: "../../src/img/imagensSabonetes/img5.jpg" },
         { name: "Produto3", description: "Descrição do Produto 3", price: "20,00", img: "../../src/img/imagensSabonetes/img6.jpg" },

@@ -71,6 +71,10 @@
 .viewMore p{
     font-size: 25px;
 }
+.viewMore a{
+    /* text-decoration: none; */
+    color: white;
+}
 .viewMore img{
     margin-top: 1vh;
     margin-bottom: 2vh;

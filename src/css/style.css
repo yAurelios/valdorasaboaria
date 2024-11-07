@@ -4,6 +4,10 @@
     scrollbar-color: #f1f1f1 #005a00;
     scrollbar-width:none;
 }
+html{
+    scroll-behavior: smooth;
+    scroll-margin-top: 10vh;
+}
 body {
     width: auto;
     height: auto;

@@ -8,7 +8,8 @@
 
     src: url("../../../src/fonts/Caudex/Caudex-Regular.ttf") format('truetype');
 }
-.products {
+.promoProducts {
+    scroll-margin-top: 10vh;
     /* border: solid red 1px; */
     /* background-color: white; */
     border-radius: 8px;
@@ -33,7 +34,7 @@
     transition: transform 0.5s ease;
     width: 100%; /* Para evitar quebra */
 }
-.products h2, .products p{
+.promoProducts h2, .promoProducts p{
     margin-top: 3vh;
     color: white;
 }
