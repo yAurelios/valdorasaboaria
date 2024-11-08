@@ -31,7 +31,7 @@ function loadHeader() {
             <span id="closePopup" class="close">&times;</span>
             <form id="loginForm">
                 <label for="username">Usuário:</label>
-                <input type="text" id="username" name="username" required><br><br>
+                <input type="text" id="username" name="username" required autofocus><br><br>
                 <label for="password">Senha:</label>
                 <input type="password" id="password" name="password" required><br><br>
                 <a href="#" id="submitLogin">Entrar</a>
