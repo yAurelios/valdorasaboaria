@@ -70,7 +70,7 @@
 }
 
 
-.popup-content a{
+.popup-content #submitLogin{
     display: inline-block;
     padding: 10px 20px;
     margin: 10px;
@@ -86,34 +86,19 @@
     /* border: solid red 1px; */
 }
 
-.popup-content a:hover {
-    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+.createAccount{
+    width: 100%;
+    height: auto;
+    /* border: solid red 1px; */
+    text-decoration: none;
+    color: rgb(40, 253, 97);
 }
-
-#confirmLogout:hover{
-    background-color: #9c0000
+#createAccountText{
+    width: 100%;
+    /* border: solid red 1px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
 }
-#cancelLogout:hover{
-    background-color: #009ed7;
-}
-
-/* <div id="popup" class="popup" style="display: none;">
-        <div class="popup-content">
-            <span id="closePopup" class="close">&times;</span>
-            <h2>Tela de Login</h2>
-            <form id="loginForm">
-                <label for="username">Usuário:</label>
-                <input type="text" id="username" name="username" required><br><br>
-                <label for="password">Senha:</label>
-                <input type="password" id="password" name="password" required><br><br>
-                <button type="submit">Entrar</button>
-            </form>
-        </div>
-    </div>
-    <div id="logoutPopup" class="popup" style="display: none;">
-        <div class="popup-content">
-            <h2>Você tem certeza que deseja deslogar?</h2>
-            <button id="confirmLogout">Sim</button>
-            <button id="cancelLogout">Não</button>
-        </div>
-    </div> */

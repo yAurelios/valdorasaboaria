@@ -1,0 +1,58 @@
+.joinOnService{
+    width: 100%;
+    height: 30vh;
+    z-index: 100;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 35vh;
+
+}
+
+#registerForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 90%;
+    border: solid red 1px;
+    position: absolute;
+    height: auto;
+    background: linear-gradient(135deg, rgba(0, 49, 0, 0.344), rgba(37, 135, 22, 0.155));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+    padding: 3rem;
+}
+
+#registerForm p{
+    font-size: 25px;
+    width: 100%;
+    /* border: solid red 1px; */
+    text-align: center;
+    color: white;
+}
+
+form a{
+    text-decoration: underline;
+    color: white;
+    margin-top: 2vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, button {
+    width: 40%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+}

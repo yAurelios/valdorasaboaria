@@ -15,6 +15,7 @@
     color: white;
     font-family: Caudex;
     /* border: solid red 1px; */
+    
 }
 .initSite .readOfStore{
     /* border: solid red 1px; */
@@ -51,11 +52,9 @@
     width: 100%;
     text-align: justify;
 }
-
 .initSite aside{
     width: 35%;
 }
-
 #linkToShop{
     width: 100%;
     height: auto;
@@ -63,7 +62,6 @@
     /* text-decoration: none; */
     color: white;
 }
-
 .viewMore{
     width: 100%;
     text-align: center;
@@ -81,7 +79,6 @@
     width: 20px;
     height: auto;
 }
-
 .initSiteProducts{
     margin-top:6vh;
     width: 100%;
